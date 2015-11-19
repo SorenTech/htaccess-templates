@@ -1,0 +1,22 @@
+Options All -Indexes
+
+<files wp-config.php>
+order allow,deny
+deny from all
+</files>
+
+<files application.php>
+order allow,deny
+deny from all
+</files>
+
+<files *.rb>
+order allow,deny
+deny from all
+</files>
+
+<files ~ "^.*\.([Hh][Tt][Aa])">
+order allow,deny
+deny from all
+satisfy all
+</files>

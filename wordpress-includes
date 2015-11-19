@@ -1,18 +1,11 @@
-Options All -Indexes
+Options -Indexes
 
 <files *.php>
 deny from all
 </files>
-
-Order deny,allow
-Deny from all
-<Files ~ ".(xml|css|jpe?g|png|gif|js)$">
-Allow from all
-</Files>
 
 <files ~ "^.*\.([Hh][Tt][Aa])">
 order allow,deny
 deny from all
 satisfy all
 </files>
-

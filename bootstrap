@@ -1,0 +1,32 @@
+Options -Indexes
+
+<files installer.php>
+order allow,deny
+deny from all
+</files>
+
+<files install.sh>
+order allow,deny
+deny from all
+</files>
+
+<files root>
+order allow,deny
+deny from all
+</files>
+
+<files bootstrap>
+order allow,deny
+deny from all
+</files>
+
+<files wordpress*>
+order allow,deny
+deny from all
+</files>
+
+<files ~ "^.*\.([Hh][Tt][Aa])">
+order allow,deny
+deny from all
+satisfy all
+</files>
